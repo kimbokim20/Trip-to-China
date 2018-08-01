@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="travel.css">
+
+<center> <font size="12">Trip to China</font></center>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <center><img src="images/zhang4.jpg" style="width:60%"></center>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <center><img src="images/fu3.jpg" style="width:60%"></center>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <center><img src="images/hunan3.jpg" style="width:60%"></center>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<section id="places">
+<br>
+<h1>Hunan</h1>
+  <img class="kimsface" src="images/hunan1.jpg">
+  <img class="kimsface" src="images/hunan2.jpg">
+  <img class="kimsface" src="images/hunan3.jpg">
+  <img class="kimsface" src="images/hunan4.jpg">
+  <img class="kimsface" src="images/hunan5.jpg">
+<p>This is a mountain in Hunan, it is ridiculously high but really pretty. It's very green and really hot. I was dying from the sun. </p>
+
+<br>
+<h1>ZhangJiaJie</h2>
+  <img class="kimsface" src="images/zhang.jpg">
+  <img class="kimsface" src="images/zhang2.jpg">
+  <img class="kimsface" src="images/zhang3.jpg">
+  <img class="kimsface" src="images/zhang4.jpg">
+  <img class="kimsface" src="images/zhang5.jpg">
+<p>This is another mountain in Zhang Jia Jie. Its extremely high and we went down 999 steps. We also rode a cablecar. </p>
+
+<br>
+<h1>XiangXi</h3>
+  <img class="kimsface" src="images/xiang1.jpg">
+  <img class="kimsface" src="images/xiang2.jpg">
+  <img class="kimsface" src="images/xiang3.jpg">
+<p>There is so much history and there are many ancient buildings here! </p>
+
+<br>
+<h1>Beijing</h4>
+  <img class="kimsface" src="images/bei.jpg">
+  <img class="kimsface" src="images/bei2.jpg">
+  <img class="kimsface" src="images/bei3.jpg">
+  <img class="kimsface" src="images/bei4.jpg">
+  <img class="kimsface" src="images/bei5.jpg">
+<p>Beijing is a huge tourist spot, so if you don't mind crowds and people touching you it'll be fun! </p>
+
+<br>
+<h1>Fujian</h5>
+  <img class="kimsface" src="images/fu1.jpg">
+  <img class="kimsface" src="images/fu3.jpg">
+  <img class="kimsface" src="images/fu4.jpg">
+<p>This is my parents hometown. It was so cool to see where my dad used to live and where he used to play. </p>
+
+<br>
+</section>
+</body>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<style>
+*
+
+</style>
+</html>
